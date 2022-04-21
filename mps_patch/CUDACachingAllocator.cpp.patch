@@ -1,0 +1,8 @@
+473c473
+<     cudaError_t err = cudaMalloc(devPtr, size);
+---
+>     cudaError_t err = cudaMallocManaged(devPtr, size);
+477c477
+<       err = cudaMalloc(devPtr, size);
+---
+>       err = cudaMallocManaged(devPtr, size);
